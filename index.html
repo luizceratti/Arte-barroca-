@@ -100,6 +100,105 @@
       color: #666666;
       font-size: 0.95rem;
     }
+
+    /* ===== IMAGEM DE DESTAQUE — SEÇÃO 1 (obra barroca) ===== */
+    .featured-image {
+      position: relative;
+      margin: -28px -28px 24px -28px;
+      border-radius: 16px 16px 0 0;
+      overflow: hidden;
+      border-bottom: 4px solid #d3fc72;
+    }
+
+    .featured-image img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+      filter: saturate(1.05) contrast(1.05);
+      transition: transform 0.4s ease;
+    }
+
+    .featured-image:hover img {
+      transform: scale(1.04);
+    }
+
+    .featured-image .badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: #d3fc72;
+      color: #0b0b0b;
+      font-weight: 800;
+      font-size: 0.75rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .featured-image .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
+      padding: 40px 18px 14px 18px;
+      color: #f0f0f0;
+      font-size: 0.95rem;
+    }
+
+    .featured-image .caption strong {
+      color: #d3fc72;
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 2px;
+    }
+
+    /* ===== IMAGEM DE DESTAQUE — SEÇÃO 3 (arte urbana) ===== */
+    .street-art-block {
+      margin: 20px 0;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 2px solid #d3fc72;
+      box-shadow: 0 0 0 4px #0b0b0b, 0 0 0 5px #262626;
+      position: relative;
+    }
+
+    .street-art-block img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .street-art-block:hover img {
+      transform: scale(1.03);
+      filter: brightness(1.05);
+    }
+
+    .street-art-block .tag {
+      position: absolute;
+      bottom: 14px;
+      right: 14px;
+      background: #0b0b0b;
+      border: 1px solid #d3fc72;
+      color: #d3fc72;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 999px;
+    }
+
+    .credit {
+      text-align: right;
+      color: #666666;
+      font-size: 0.85rem;
+      margin-top: 8px;
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
@@ -113,6 +212,15 @@
     <main>
       <!-- SEÇÃO 1: O BARROCO EUROPEU E SUA ÉPOCA -->
       <section class="card">
+        <div class="featured-image">
+          <span class="badge">Século XVII</span>
+          <img src=" acoroacaodavirgem-cke.webp" alt="Coroação da Virgem, pintura barroca de Annibale Carracci">
+          <div class="caption">
+            <strong>A Coroação da Virgem</strong>
+            Annibale Carracci — dramaticidade, luz e emoção como marcas do Barroco
+          </div>
+        </div>
+
         <h2>1. Importância e Porquê de Preservar o Barroco Europeu e sua Época</h2>
         <p>
           O Barroco emergiu na transição do século XVI para o XVII em uma Europa conturbada por guerras religiosas, a Contrarreforma católica, crises sociais e epidemias. Essa atmosfera de incerteza fez com que a arte abandonasse a perfeição estática do Renascimento para abraçar o drama, a emoção crua, a iluminação teatral e a fragilidade humana.
@@ -150,6 +258,14 @@
           A arte vai além dos grandes museus; ela está presente no cotidiano e afeta diretamente como percebemos o mundo ao nosso redor.
         </p>
 
+        <div class="street-art-block">
+          <img src="Arte-urbana_Mural-de-grafite-do-artista-Paulo-Ito-na-região-da-Pompeia-SP.-Foto-Sampa-Graffitti.jpg
+          
+    " alt="Mural de grafite do artista Paulo Ito na região da Pompeia, São Paulo">
+          <span class="tag">Arte Urbana</span>
+        </div>
+        <p class="credit">Mural de Paulo Ito, Pompeia (SP) — Foto: Sampa Graffitti</p>
+
         <h3>Como a arte nos impacta diariamente:</h3>
         <ul>
           <li><strong>Design, Fotografia e Cinema:</strong> O uso de luz, contraste, enquadramento e teoria das cores nas telas dos celulares, no cinema e no design gráfico moderno tem origens diretas nas técnicas desenvolvidas no século XVII.</li>
@@ -181,3 +297,5 @@
 
 </body>
 </html>
+
+
